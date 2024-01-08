@@ -22,8 +22,8 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->library('email');
 
-		$this->email->from('nandenmonaiya898@gmail.com', 'Your Name'); // Ganti dengan alamat email dan nama pengirim
-		$this->email->to('fakhriansyahnugroho007@gmail.com'); // Ganti dengan alamat email penerima
+		$this->email->from('fakhriansyahnugroho007@gmail.com', 'kunzzz'); // Ganti dengan alamat email dan nama pengirim
+		$this->email->to('zabyza81@gmail.com'); // Ganti dengan alamat email penerima
 		$this->email->subject('Hello World Email');
 		$this->email->message('Hello World! This is a test email from CodeIgniter.');
 	
@@ -31,6 +31,8 @@ class Welcome extends CI_Controller {
 			echo 'Email berhasil dikirim.';
 		} else {
 			show_error($this->email->print_debugger());
+			
 		}
 	}
+
 }
